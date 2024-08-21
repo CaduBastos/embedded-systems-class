@@ -2,9 +2,9 @@
 
 #this script execute a task and print something when an interrupt (ctrl+c) occurs
 
-trap 'echo pessoal' SIGINT
+trap 'echo "pessoal" ; exit ' 2
 
-while : ; do
+while true; do
     echo oi
     sleep 1
 done
