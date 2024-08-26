@@ -20,6 +20,6 @@ make exec: objects
 make run: exec
 	./main
 	
-#clean files created by this makefil
+#clean files created by this makefile
 clean:
 	rm main.s main.o main  
