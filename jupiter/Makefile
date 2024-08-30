@@ -19,6 +19,7 @@ $(distdir).tar.gz: $(distdir)
 	rm -rf $(distdir)
 
 # creates the directory to be shipped and copies the files into it
+$(distdir): FORCE
 	mkdir -p $(distdir)/src
 	cp Makefile $(distdir)
 	cp src/Makefile src/main.c $(distdir)/src
@@ -26,5 +27,5 @@ $(distdir).tar.gz: $(distdir)
 #forces the cleaning of previous generated distribution files
 FORCE:
 	-rm $(distdir).tar.gz > /dev/null 2>&1
-	rm -rf $(distdir0)
+	rm -rf $(distdir)
 
