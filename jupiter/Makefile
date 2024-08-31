@@ -3,11 +3,15 @@ version = 1.0
 tarname = $(package)
 distdir = $(tarname)-$(version)
 
+# instalation path
+prefix=/usr/local
+export prefix
+
 # just invoke Makefile into subdirectories
 
-.PHONY: all clean check dist FORCE distcheck 
+.PHONY: all clean check dist FORCE distcheck install uninstall
 
-all clean check jupiter: 
+all clean check install uninstall jupiter: 
 	cd src && $(MAKE) $@
 
 # creates the distribuiton package
@@ -33,7 +37,7 @@ distcheck: $(distdir).tar.gz
 	rm -rf $(distdir)
 	@echo "*** Package $(distdir).tar.gz is ready for distribuition"
 
-#forces the cleaning of previous generated distribution files
+# forces the cleaning of previous generated distribution files
 FORCE:
 	-rm $(distdir).tar.gz > /dev/null 2>&1
 	rm -rf $(distdir)
