@@ -1,0 +1,1 @@
+savedcmd_/home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/Module.symvers -T /home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/modules.order -i Module.symvers -e 

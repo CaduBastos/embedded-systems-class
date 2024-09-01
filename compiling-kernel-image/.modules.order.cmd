@@ -1,0 +1,1 @@
+savedcmd_/home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/modules.order := {   echo /home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/hello-world.o; :; } > /home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/modules.order

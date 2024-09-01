@@ -1,0 +1,1 @@
+savedcmd_/home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/hello-world.mod := printf '%s\n'   hello-world.o | awk '!x[$$0]++ { print("/home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/"$$0) }' > /home/cadubastos/EE/sistemas-embarcados/compiling-kernel-image/hello-world.mod
