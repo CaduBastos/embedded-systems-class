@@ -1,0 +1,12 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "atomic.h": "c",
+        "cdev.h": "c",
+        "device.h": "c",
+        "init.h": "c",
+        "module.h": "c",
+        "types.h": "c",
+        "errno.h": "c"
+    }
+}
