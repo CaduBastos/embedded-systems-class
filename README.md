@@ -1,4 +1,4 @@
-🐧 Embedded Systems Class
+🐧 Embedded systems coursework
 ========================
 
 This repository is dedicated to **Embedded Systems studies** and contains source code
